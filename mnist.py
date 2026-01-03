@@ -111,3 +111,7 @@ accuracy
 """# Save the Model"""
 
 torch.save(model.state_dict(), "mnist_cnn.pt")
+
+from google.colab import files
+files.download("mnist_cnn.pt")
+
